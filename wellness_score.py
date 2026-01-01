@@ -40,11 +40,9 @@ ax.plot(df["wellness_score"])
 ax.set_title("Wellness Score Over Time")
 ax.set_xlabel("Date")
 ax.set_ylabel("Wellness Score")
-
-# 🔹 Remove x-axis tick labels (no overlap)
 ax.set_xticks([])
 
-# 🔹 Custom coordinate display (bottom-right)
+# 🔹 Custom coordinate display 
 def format_coord(x, y):
     index = int(round(x))
     if 0 <= index < len(df):
